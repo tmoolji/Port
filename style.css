@@ -1,0 +1,35 @@
+:root {font: 20px/1.2 "Roboto", sans-serif;}
+
+body,
+body * {
+  background-color: rgb(253, 255, 252);
+  margin:           unset;
+  box-sizing:       unset;
+  padding:          unset;
+  font-size:        unset;
+  color:            unset;
+  text-decoration:  unset;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr 0.5in [s] minmax(0in, 7.5in) [e] 0.5in 1fr;
+
+  height: 1000px;
+  padding: 0.5in, 0;
+}
+
+.section * {
+  grid-column: s/e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section p {
+  color: #001021;
+}
+
+@media (max-width: 8.5in) {
+  .section { grid-template-columns: 1fr 5% [s] 90% [e] 5% 1fr;}
+}
