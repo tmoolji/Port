@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+  </head>
+  <body>
+    <div class="demoWapper">
+      <div class = "square"></div>
+      <input id="demoInput" value = 0>
+    </div>
+    <script>
+      anime({
+        targets: '.square',
+        translateX: 250,
+        rotateX: 360,
+        duration: 3000,
+        loop: true,
+
+
+      });
+
+      anime({
+        targets: '#demoInput',
+        value: [0, 100],
+        easing: 'linear',
+        duration: 5000,
+        round: 1,
+      });
+
+    </script>
+
+  </body>
+</html>
