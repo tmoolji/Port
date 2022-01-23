@@ -123,6 +123,11 @@ body * {
 }
 
 
+.links {
+  text-align: center;
+}
+
+
 
 @media (max-width: 8.5in) {
   .header { grid-template-columns: 1fr 5% [s] 90% [e] 5% 1fr;}
