@@ -8,15 +8,106 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="-debug.css">
   <!--  <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
-  https://coolors.co/fdfffc-c33c54-06908f-001021 - color palatte
+  https://coolors.co/fdfffc-e09ea8-82c8c6-e64764-06908f-62263b-047582-001021 - color palatte
   -->
   </head>
 
   <body>
 
-    <div class= "section">
-      <p>Section</p>
+
+
+    <div class= "header">
+      <div class = "toc"> <!--
+        TODO: add in spans of text that are hyperlinked to the different sections
+              use Id's in each of the sections
+              use a href to hyperlink to ids
+       --></div>
+      <p class = "hello">Hello, I am</p>
+
+      <h1 class = "bigName"> Taimur Moolji.<h1>
+      <p class = "intro"> I'm a Freshman at Yale University pursuing a double major in Computer Science
+      and Applied Mathematatics. Some things that interest me:  </p>
+
+
+
+
     </div>
+
+    <div class = "list">
+      <ul class = "intro">
+          <li>Blockchain</li>
+          <li>NLP </li>
+          <li>Encryption</li>
+          <li>Distributed Systems</li>
+          <li>Robotics</li>
+        </ul>
+      </div>
+
+    <div class = "header" id="work">
+      <h2>Some things I've worked on</h2>
+      <div class = "exp">
+        <p class = "title">LightLand  </p>
+        <p class = "date"> Jul 2021</p>
+        <p class = language>Java</p>
+        <p class = description>A 2D, tile-based video game with a pseudo-randomly generated world.
+          Players attempt to shut off all lights on the board before time runs out, while evading
+          enemies that track them using the A* search algorithm. Progress can be saved and loaded.
+          A heads-up display tells the player the type of the tile they are hovering over with
+          their mouse, the time remaining, and the number of lights left on the board.</p>
+      </div>
+      <br>
+      <div class = "exp">
+        <p class = "title">Gitlet </p>
+        <p class = "date"> Jun 2021</p>
+        <p class = language>Java</p>
+        <p class = description>A local version control system that replicates the
+          basic features of git, including creating and deleting repositories, storing
+          commits, checking out to previous commits, branching, resolving merge conflicts,
+          uploading to remote repositories and tracking information about the current
+          head state. Utilizes SHA-1 hashing to serialize and store files.</p>
+      </div>
+      <br>
+      <div class = "exp">
+        <p class = "title">Scheme Interpreter </p>
+        <p class = "date"> Mar 2021</p>
+        <p class = language>Python, Scheme</p>
+        <p class = description>A joint compiler and interpreter that converts text
+          files written in Scheme to Python and runs them. Handles all basic Scheme
+          commands, including basic mathematical operations, special forms like
+          “lambda” and “define,” control flow statements like “if/else,” “cond,”
+          and “switch.” Employs rudimentary error checking and returns a simple
+          error message with the offending line number.</p>
+      </div>
+      <br>
+      <div class = "exp">
+        <p class = "title">GoCrypto </p>
+        <p class = "date"> Nov 2020 – Mar 2021</p>
+        <p class = language>Python, BeautifulSoup, Kivy, Pandas</p>
+        <p class = description>A mobile app that employs web scraping to pull
+          and display current prices and trends for the top 50 cryptocurrencies
+          from Yahoo finance. Users can toggle between the prices of all 50 assets,
+          and the top and bottom 5 performers based on daily percentage returns.
+          Prices and performance are recalculated when the user presses the “Refresh”
+          button.</p>
+      </div>
+      <br>
+      <div class = "exp">
+        <p class = "title">Experimental Setup to Measure Signal to Noise Ratio of Photodetectors </p>
+        <p class = "date"> Jun – Aug 2019</p>
+        <p class = language>LabView, R, Matlab</p>
+        <p class = description>Designed and implemented a setup using a QTH bulb,
+          monochromator, and lock-in amplifier to test the efficacy of Silicon,
+          InGaN, and AlGaInP photodetectors for a range of wavelengths in the
+          visible spectrum (380 – 740nm). Using the photocurrent as a proxy for
+          signal strength, identified the optimal design materials and dimensions
+          required to achieve the desired signal to noise ratio.</p>
+      </div>
+
+
+    </div>
+
+
+
 
   </body>
 </html>
