@@ -38,7 +38,7 @@ body * {
   grid-row: 3 / 4;
   justify-content: flex-start;
   align-items: flex-end;
-  font: 4rem Helvetica, sans-serif;
+  font: 5rem Helvetica, sans-serif;
   font-weight: bold;
   color: #047582;
   box-shadow: inset 0 -0.25rem #E64764
@@ -55,7 +55,7 @@ body * {
   display: grid;
   grid-template-columns: 1.5fr  minmax(0in, 7.5in) 1fr;
   justify-content: left;
-  padding-bottom: 0.5in
+  padding-bottom: 1.3in
 }
 
 .list ul {
@@ -68,7 +68,7 @@ body * {
   display: grid;
   grid-template-columns: 15% 1fr 15% ;
   grid-template-rows: 4rem 1fr 1fr 1fr 1fr 1fr 0.5in;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
 }
 
 
@@ -77,7 +77,7 @@ body * {
   grid-column: 2/3;
   grid-row: 1/2;
   justify-content: flex-start;
-  font: 2rem Helvetica, sans-serif;
+  font: 1.75rem Helvetica, sans-serif;
   font-weight: bold;
   color: #c33c54
 }
@@ -85,7 +85,7 @@ body * {
 #work .exp {
   grid-column: 2/3;
   display:grid;
-  grid-template-columns:  0.5in 2fr 1fr 1fr 0.5in ;
+  grid-template-columns:  5% 2fr 1fr 1fr 5% ;
   grid-template-rows: 1.5rem 0.25rem 1.5rem 0.25rem 1.5rem;
 
 }
@@ -102,13 +102,15 @@ body * {
   grid-column: 4/5;
   grid-row: 1/2;
   justify-content: flex-end;
+  font: 0.80rem Courier, serif;
+  color: #E64764
 }
 
 .exp .language {
   font-weight: bold;
   grid-row: 3/4;
   grid-column: 2/3;
-  font: 0.9rem Courier, serif;
+  font: 0.85rem Courier, serif;
   color: #E09EA8;
   font-style: italic;
   align-items: flex-start;
@@ -129,10 +131,15 @@ body * {
 
 
 
+@media (max-width: 12in) {
+  #work { grid-template-columns: 5%  75% 1fr 15% 5%;
+        height: 1200px;}
+  #work .exp {grid-template-columns: 0% 100% 1fr 15% 0%;}
+}
+
 @media (max-width: 8.5in) {
   .header { grid-template-columns: 1fr 5% [s] 90% [e] 5% 1fr;}
   .list {grid-template-columns: 10% 80% 10% ;}
-  #work { grid-template-columns: 5%  75% 1fr 15% 5%;}
-  #work .exp {grid-template-columns: 0% 85% 1fr 15% 0%;
-              }
+  #work { grid-template-columns: 5%  75% 1fr 15% 5%;
+    height: 1500px;}
 }
