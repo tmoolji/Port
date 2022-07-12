@@ -14,6 +14,7 @@
 
   <body>
 
+    <!--<img src = "yale-logo.png" width="150px" style="vertical-align:left;margin:10px 10px"-->
 
 
     <div class= "header">
@@ -21,19 +22,22 @@
         TODO: add in spans of text that are hyperlinked to the different sections
               use Id's in each of the sections
               use a href to hyperlink to ids
-       --></div>
+       -->
+       <span> <a href="#work" class = "tab">Portfolio</a></span>
+       <span><a href="" class = "tab">Skills </a></span>
+       <span> <a href="#socials" class = "tab">Socials</a></span>
+
+     </div>
       <p class = "hello">Hello, I am</p>
 
       <h1 class = "bigName"> Taimur Moolji.<h1>
       <p class = "intro"> I'm a Freshman at Yale University pursuing a double major in Computer Science
       and Applied Mathematatics. Some things that interest me:  </p>
 
-
-
-
     </div>
 
     <div class = "list">
+
       <ul class = "intro">
           <li>Blockchain</li>
           <li>NLP </li>
@@ -44,6 +48,9 @@
       </div>
 
     <div class = "header" id="work">
+      <div class="line right">
+        <div class="scanner"></div>
+      </div>
       <h2>Some things I've worked on</h2>
       <div class = "exp">
         <p class = "title">LightLand  </p>
@@ -92,10 +99,11 @@
       </div>
       <br>
       <div class = "exp">
-        <p class = "title">Experimental Setup to Measure Signal to Noise Ratio of Photodetectors </p>
+        <p class = "title">Photodetector Parameter Optimization  </p>
         <p class = "date"> Jun – Aug 2019</p>
         <p class = language>LabView, R, Matlab</p>
-        <p class = description>Designed and implemented a setup using a QTH bulb,
+        <p class = description>
+          Designed and implemented a setup using a QTH bulb,
           monochromator, and lock-in amplifier to test the efficacy of Silicon,
           InGaN, and AlGaInP photodetectors for a range of wavelengths in the
           visible spectrum (380 – 740nm). Using the photocurrent as a proxy for
@@ -106,7 +114,7 @@
 
     </div>
 
-    <div class = links >
+    <div class = links id = "socials">
       <a href="https://www.linkedin.com/in/taimur-moolji-002010201/" target="_blank">
         <img src = "Linkedin.png" width="80px"></a>
     </div>
