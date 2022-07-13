@@ -1,23 +1,28 @@
-const anime = require('https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.js');
+let slideIndex = 1;
+showSlides(slideIndex);
 
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-const anim = anime.timeline({
-  loop: true,
-  direction: 'alternate',
-});
-
-anim
-  .add({
-    targets: '#hexagon path',
-    strokeDashoffset: [anime.setDashoffset, 0],
-    easing: 'easeInOutQuart',
-    duration: 2000,
-    delay: function(el, i) { return i * 250 },
-  })
-  .add({
-    targets: '#hexagon #B',
-    duration: 1000,
-    opacity: 1,
-    easing: 'easeInOutQuart'
-  });
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
