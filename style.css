@@ -84,10 +84,10 @@ body * {
 }
 
 #work {
-  height: 1800px;
+  height: 2000px;
   display: grid;
   grid-template-columns: 15% 1fr 15% ;
-  grid-template-rows: 4rem 4.5in 1fr 1fr 1fr 1fr 1fr 1fr 0.5in;
+  grid-template-rows: 4rem 4.5in  1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5in;
   padding-bottom: 1rem;
 }
 
@@ -154,7 +154,7 @@ body * {
 {
   position: absolute;
   left: 200px;
-  grid-row: 3/9;
+  grid-row: 3/10;
   padding: 1px;
   background-color: #f54968;
   box-shadow: 0px 0px 12px #f54968;
@@ -290,7 +290,7 @@ body * {
 
 @media (max-width: 12in) {
   #work { grid-template-columns: 5%  75% 1fr 15% 5%;
-        height: 1100px;}
+        height: 1800px;}
   #work .exp {grid-template-columns: 0% 100% 1fr 15% 0%;}
   .header .line {left:10px;}
 }
@@ -299,5 +299,5 @@ body * {
   .header { grid-template-columns: 1fr 5% [s] 90% [e] 5% 1fr;}
   .list {grid-template-columns: 10% 80% 10% ;}
   #work { grid-template-columns: 5%  75% 1fr 15% 5%;
-    height: 1600px;}
+    height: 2300px;}
 }
